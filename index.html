@@ -9,7 +9,12 @@
   </head>
 
   <body>
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
+    <form id="userForm" action="http://localhost:3000/users" method="POST">
+      <label> User Name: <input type="text" name="userName" id="userName" /></label><br />
+      <label> User Email: <input type="text" name="userEmail" id="userEmail" /></label><br />
+      <input type="submit" name="submit" id="submit" value="Submit" />
+    </form>
   </body>
 
 </html>
